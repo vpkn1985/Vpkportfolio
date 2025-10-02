@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koteeswaran V.P - Professional Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7fa;
+            color: #333;
+            scroll-behavior: smooth; /* Enables smooth scrolling for the entire page */
+        }
+        header {
+            background: linear-gradient(135deg, #007bff, #0056b3);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://source.unsplash.com/random/1920x1080/?technology') no-repeat center/cover;
+            opacity: 0.3;
+            z-index: 1;
+        }
+        header > * {
+            position: relative;
+            z-index: 2;
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            transition: transform 0.3s ease;
+        }
+        header h1:hover {
+            transform: scale(1.1);
+        }
+        header p {
+            font-size: 1.2em;
+            margin: 10px 0;
+            transition: opacity 0.3s ease;
+        }
+        header p:hover {
+            opacity: 0.8;
+        }
+        .contact {
+            font-size: 1em;
+            margin-top: 20px;
+        }
+        .contact i {
+            margin-right: 10px;
+        }
+        section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+        section.in-view {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        h2 {
+            color: #007bff;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 2em;
+            display: flex;
+            align-items: center;
+            transition: color 0.3s ease;
+        }
+        h2:hover {
+            color: #0056b3;
+        }
+        h2 i {
+            margin-right: 10px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 15px;
+            position: relative;
+            padding-left: 25px;
+            transition: transform 0.3s ease;
+        }
+        ul li:hover {
+            transform: translateX(10px);
+        }
+        ul li::before {
+            content: '\f058';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: #007bff;
+        }
+        .experience-item, .project-item {
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+        }
+        .experience-item:hover, .project-item:hover {
+            transform: scale(1.02);
+        }
+        .experience-item h3, .project-item h3 {
+            font-size: 1.5em;
+            margin: 0 0 5px;
+            color: #0056b3;
+        }
+        .experience-item p, .project-item p {
+            margin: 5px 0;
+            font-style: italic;
+            color: #666;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .skill-category {
+            background: #e9f1ff;
+            padding: 15px;
+            border-radius: 8px;
+            transition: background 0.3s ease;
+        }
+        .skill-category:hover {
+            background: #d0e0ff;
+        }
+        .skill-category h4 {
+            margin: 0 0 10px;
+            color: #007bff;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #007bff;
+            color: white;
+            margin-top: 40px;
+            transition: background 0.3s ease;
+        }
+        footer:hover {
+            background: #0056b3;
+        }
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+            section {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Koteeswaran V.P</h1>
+        <p>Highly motivated individual and a PRINCE2 foundation certified PMP professional with 16 years of Strong and extensive experience in Program/Project/IT Operations Management and overall of 19+ Years into IT Industry, having global exposure and worked with all Verticals like, MFG, FMCG, BFSI, IT, LS, Supply Chain, Pharma.</p>
+        <div class="contact">
+            <p><i class="fas fa-phone"></i>Cell: 7026207290 / 9840211046</p>
+            <p><i class="fas fa-envelope"></i>Email: koteeswaran.vp@yahoo.com</p>
+        </div>
+    </header>
+
+    <section id="qualifications">
+        <h2><i class="fas fa-graduation-cap"></i>Qualifications</h2>
+        <ul>
+            <li>MBA in IT & Project Management - CGPA 8.5 - ISBM, Mumbai</li>
+            <li>B.Tech in Engineering Technology - CGPA 7.61 - BITS Pilani</li>
+            <li>Engineering Diploma in Electrical & Electronics - Percentage 85% - Murugappa Polytechnic College, Chennai</li>
+        </ul>
+    </section>
+
+    <section id="skills">
+        <h2><i class="fas fa-tools"></i>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h4>Technical Skills</h4>
+                <ul>
+                    <li>PMP</li>
+                    <li>Prince2 Foundation</li>
+                    <li>Cloud Migrations</li>
+                    <li>ServiceTransition</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h4>Management Skills</h4>
+                <ul>
+                    <li>Program Mgmt</li>
+                    <li>People Management</li>
+                    <li>IT operations Management</li>
+                    <li>Service Delivery Management</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2><i class="fas fa-briefcase"></i>Experience</h2>
+        <div class="experience-item">
+            <h3>Senior Program Manager (Portfolio Manager)</h3>
+            <p>From -11/2021 | Company Name: Cognizant Technology Solutions Limited</p>
+            <p>Description: 1. Portfolio / Program Management- 2. Service Delivery Management 3. Operational Excellence 4. Program Forecast/Governance</p>
+        </div>
+        <div class="experience-item">
+            <h3>Senior Project Manager (Portfolio Lead)</h3>
+            <p>6/2019-11/2021 | Company Name: HCL Technologies Limited</p>
+            <p>Description: 1. Portfolio / Program Management- 2. Service Delivery Management 3. People Management 4. CFS</p>
+        </div>
+        <div class="experience-item">
+            <h3>Deputy Manager Information Systems</h3>
+            <p>5/2015 - 7/2019 | Company Name: Valeo India Private Limited</p>
+            <p>Description: 1. IT Program Management 2. IT Infrastructure Operations Management 3. People Management 4. Service Delivery Management 5. CMMI SVC L3 implementation 6. ITIL V3 implementation 9. 24/7 IT support Setup</p>
+        </div>
+        <div class="experience-item">
+            <h3>Associate Manager Global IT</h3>
+            <p>9/2011 - 5/2015 | Company Name: HCL Technologies Limited</p>
+            <p>Description: 1. Global IT Infrastructure Project Management 2. IT Operations Management 3. People Management 4. Service Delivery Management</p>
+        </div>
+        <div class="experience-item">
+            <h3>Site – In – Charge / IT PMO</h3>
+            <p>7/2008 - 5/2011 | Company Name: Wipro Infotech, Hyderabad</p>
+            <p>Description: 1. Global IT Infrastructure Project Management 2. IT Operations Management 3. People Management 4. Service Delivery Management</p>
+        </div>
+        <div class="experience-item">
+            <h3>Senior Network Engineer</h3>
+            <p>5/2005 - 6/2008 | Company Name: HCL Technologies Limited</p>
+            <p>Description: 1. WAN Management, 2. LAN Management 3. Team Lead</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2><i class="fas fa-project-diagram"></i>Projects</h2>
+        <div class="project-item">
+            <h3>Cloud Migrations – HCL / CTS</h3>
+            <p>7/2019 onwards</p>
+            <p>Infra Programs → On-prem to Cloud Migration of 12000 servers in AWs 2. On-prem to cloud Migration of 18000 servers in Azure 3. Cloud to Cloud Of 1500 servers from AWS to Azure, Operational Excellence with CFS team, Service Delivery management with a spearhead of 200 Technical resources,4. People Management, 5. Application & Data/Workload migration from On-Prem to Cloud,</p>
+            <p>App Dev Programs → 1. Application development and Management of 2000 Business and Legacy Apps 2. Transition from Outsourced vendors to Internal DevOps Teams and COE Teams /GCC Teams 3.  Content management System migration, Chat Bots Setup for Business teams, Service management 4. Ticketing Tool Migration from Remedy to Jira and Servicenow, 5. Migration of Webex to Zoom and MS Teams.5.  Application migration from On-Premises to Cloud based servers across the globe.</p>
+        </div>
+        <div class="project-item">
+            <h3>Information Systems Transition – Valeo India Pvt Ltd</h3>
+            <p>6/2015 - 4/2019</p>
+            <p>Infra Revamp → On-prem to Cloud Migration of 25000 servers to Hyper-V 2. Win 2016 upgrade of 50000 Servers in On prem and cloud. 3. VM ware to Hyper-V migration of 25000 servers 4. ToIP to VoIP migration of 75000 Phones 5. 250 VCon setups 6.Migration of 1500 WAN links from on SP to other SP 7. Migration of 2500 IPSec VPNs from one partner Gateway to another partner Gateway 8. NAC implementation with CISCO ISE for 60000 CISCO switches, WLCs & Routers 9. Monitoring of 2.5 Lakhs IT assets like Servers and Networking devices and WAN Links 10. IT Operations Management of 220 Geo Sites 11. 24/7 support with 240 Tech Resources</p>
+            <p>App Revamp → 1. Setting up Competence center for App development & Management, 2. Setting up DevOps teams, 3. Moving all the Apps from different Coding languages to GAE based – overall 450 Applications were re-developed in GAE, Transitioning App dev and App management support from various vendors across the globe to internal ADM (App Dev & management) Team & DevOps Team</p>
+        </div>
+        <div class="project-item">
+            <h3>Location Consolidation - HCL Technologies Limited</h3>
+            <p>6/2012 - 3/2015</p>
+            <p>ODC setup across the globe with MPLS links and Voice setup 2. Nearshore center Setups 3. ODC migrations and Customer DC migrations 4. Chennai Location Consolidation of 200+ projects from 20 Physical locations to single location by moving 20000+ users, Client connectivity (iVPNs, MPLS, PRIs, E1s T1s, VoIP Phones, Laptops, Servers, etc – Complete Infrastructure).</p>
+        </div>
+    </section>
+
+    <section id="achievements">
+        <h2><i class="fas fa-trophy"></i>Achievements</h2>
+        <ul>
+            <li>Key Contributor/Top Performer - 4/2017 - Valeo India Private Limited - For my contribution in setting up the NOC and SOC teams with 24x7 support model for the first time in the company.</li>
+            <li>O - Infinity / HCL Jewel / LiveWire - 4/2021 - HCL Technologies - For getting O rating for 3 years consecutively, For exemplary contributions in Project Delivery & management, for excelling in meeting CSAT</li>
+            <li>Thanks a Zillion / Star Performer - 2/2012 - Wipro Infotech - For cost saving efforts of 5 Billion for 2 Projects.</li>
+        </ul>
+    </section>
+
+    <section id="certifications">
+        <h2><i class="fas fa-certificate"></i>Certifications</h2>
+        <ul>
+            <li>Oracle Cloud Infrastructure Certified Architect Associate – 2021</li>
+            <li>Prince2 Foundation – 2018</li>
+            <li>Bullet Proof Manager - 2017</li>
+            <li>PMP – 2015</li>
+            <li>Lead Auditor - 2015</li>
+            <li>ITIL V3 Foundation - 2009</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Koteeswaran V.P | Designed with modern web technologies</p>
+    </footer>
+
+    <script>
+        // Function to check if an element is in view
+        function isInViewport(el) {
+            const rect = el.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+
+        // Function to handle scroll animation
+        function handleScroll() {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                if (isInViewport(section)) {
+                    section.classList.add('in-view');
+                }
+            });
+        }
+
+        // Add scroll event listener
+        window.addEventListener('scroll', handleScroll);
+        // Trigger on load to animate sections already in view
+        window.addEventListener('load', handleScroll);
+    </script>
+</body>
+</html>
